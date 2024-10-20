@@ -39,3 +39,8 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+function mostrarMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active'); /* Alterna la clase active */
+}
