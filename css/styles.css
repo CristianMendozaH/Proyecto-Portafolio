@@ -8,6 +8,13 @@
     --Gris-Oscuro: #1a1a1a;
     --Plaateado: #C0C0C0;
     --verde: #208d12;
+    --Python: #007BFF;
+    --CPlusPlus: #007BFF;
+    --Csharp: #007BFF;
+    --HTML5: #ff0e0e;
+    --CSS: #53a6ff;
+    --JavaScript: #efff09;
+    --Java: #81d1ff;
 }
 *{
     box-sizing: border-box;
@@ -426,6 +433,38 @@ svg {
     /* Estilos para el botón */
     background-color: var(--Azul-electico); /* Color de fondo verde (puedes cambiarlo) */
     color: var(--blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  .html5 {
+    /* Estilos para el botón */
+    background-color: var(--HTML5); /* Color de fondo verde (puedes cambiarlo) */
+    color: var(--blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  .css {
+    /* Estilos para el botón */
+    background-color: var(--CSS); /* Color de fondo verde (puedes cambiarlo) */
+    color: var(--blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  .JavaS {
+    /* Estilos para el botón */
+    background-color: var(--JavaScript); /* Color de fondo verde (puedes cambiarlo) */
+    color: var(--Negro);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  .Java {
+    /* Estilos para el botón */
+    background-color: var(--Java); /* Color de fondo verde (puedes cambiarlo) */
+    color: var(--Negro);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
