@@ -21,6 +21,24 @@ html{
     scroll-behavior: smooth;
     min-width: 580px;
 }
+.logo span{
+    font-family: 'Dancing Script';
+    color: var(--blanco);
+}
+.git {
+    /* Estilos para el contenedor */
+    text-align: center; /* Centra los elementos horizontalmente */
+  }
+  
+  .language-button {
+    /* Estilos para el botón */
+    background-color: #4CAF50; /* Color de fondo verde (puedes cambiarlo) */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
 .portfolio{
     background-color: var(--Gris-Palido);

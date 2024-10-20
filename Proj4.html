@@ -11,30 +11,35 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preload" href="css/stylesProject.css" as="style">
-    <link rel="stylesheet" href="css/stylesProject.css">
 </head>
 
 <body>
- <!-- MENU ENCABEZADO -->
+<!-- MENU ENCABEZADO -->
  <div class="contenedor-header">
     <header>
         <div class="logo">
-            <a href="index.html">Cristian</a>
+            <a href="index.html">Cristian <span>Mendoza</span></a>
         </div>
         <nav id="nav">
             <ul>
-                <li><a href="index.html" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="/index.html#inicio" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="/index.html#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="/index.html#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                <li><a href="/index.html#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                
             </ul>
         </nav>
         <div class="nav-responsive" onclick="mostrarOcultarMenu()">
             <i class="fa-solid fa-bars"></i>
+
+        <div class="nav-icon" id="nav-icon">
+            <i class="fas fa-bars"></i> <!-- Este es el ícono del menú -->
         </div>
     </header>
 </div>
 
 <!----------------------- SECCION INICIO ------------------------->
-<section id="portfolio" class="portfolio">
+<section id="inicio" class="portfolio">
     <div class="contenido-seccion">
         <br>
         <br>
@@ -42,6 +47,8 @@
         <a href="https://github.com/CristianMendozaH/Analizador-lexico.git">
             <img src="img/github.png" class="gitimg" alt=""> 
         </a>
+        <br>
+        <button class="language-button">JavaScript</button>
     </div>
 
     <div class="tituloP">
@@ -116,6 +123,20 @@
         </div>
     </div>
 </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
 
+<script src="./js/menu.js"></script>
 </body>
 </html>
