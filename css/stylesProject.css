@@ -22,66 +22,8 @@ html{
     min-width: 580px;
 }
 
-/*MENU*/
-.contenedor-header{
-    background: var(--Gris-Oscuro);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    border-bottom: 4px solid var(--Naranja)
-
-}
-.contenedor-header header{
-max-width: 1100px;
-margin: auto;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 15px 20px;
-
-}
-
-.contenedor-header header .logo a{
-    font-family: 'Poppins';
-    font-size: 36px;
-    font-weight: bold;
-    color: var(--Naranja);
-    text-decoration: none;
-}
-
-.contenedor-header header ul{
-    display: flex;
-    list-style: none;
-}
-
-.contenedor-header header nav ul li a{
-    text-align: none;
-    color: #fff;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none;
-}
-
-.contenedor-header header nav ul li a:hover{
-    color: #00FFFF;
-}
-
-.nav-responsive{
-    background-color: #00FFFF;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-}
-
-
-
 .portfolio{
-    background-color: #252A2E;
+    background-color: var(--Gris-Palido);
     color: #fff;
     padding: 50px 20px;
 }
@@ -112,7 +54,6 @@ padding: 15px 20px;
     display: block;
 }
 
-
 .portfolio .contenido-seccion .definicion{
     text-align: center;
     padding-top: 10px;
@@ -133,6 +74,68 @@ padding: 15px 20px;
     margin: auto;
     border-radius: 100%;
     transition: .5s;
-    
 }
 
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: var(--Gris-Palido);
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid var(--blanco);
+        padding: 10px 0;
+    }
+    .portfolio .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .portfolio .galeria .proyecto {
+        max-width: 30%;
+        margin-bottom: 20px;
+    }
+    .portfolio .galeria .proyecto img, .portfolio .galeria .proyecto video {
+        width: 100%;
+        height: auto; /* Ajusta la altura de las imágenes proporcionalmente */
+        object-fit: cover; /* Opcional: asegura que la imagen cubra el contenedor */
+    }
+    
+}
+/* Estilo responsivo para pantallas pequeñas */
+@media screen and (max-width: 700px) {
+    .portfolio .galeria {
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto {
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img, .portfolio .galeria .proyecto video {
+        width: 100%;
+        height: auto; /* Asegura que la altura se ajuste proporcionalmente */
+    }
+    .portfolio .contenido-seccion {
+        padding: 10px;
+    }
+    .definicion span {
+        font-size: 16px;
+    }
+    .tituloP h2 {
+        font-size: 24px;
+    }
+}
