@@ -497,10 +497,10 @@ svg {
     padding-bottom: 50px;
 }
 .portfolio .galeria .proyecto video {
-    max-width: 340px; /* Ajusta al mismo ancho máximo de las imágenes */
-    width: 100%; /* Asegura que el video ocupe el 100% dentro del contenedor */
-    height: auto; /* Mantiene las proporciones del video */
-    display: block;
+    max-width: 100%;  /* El video ocupa el 100% del ancho del contenedor */
+    height: auto;  /* Mantiene las proporciones del video */
+    display: block;  /* Elimina cualquier posible espacio blanco causado por display: inline */
+    margin: 0 auto;  /* Centra el video horizontalmente */
 }
 
 
@@ -543,6 +543,10 @@ svg {
         width: 50%; /* Ocupará el 50% del ancho en pantallas medianas */
         margin-top: 10vw; /* Margen superior más amplio en pantallas pequeñas */
         margin-bottom: 10vw; /* Margen inferior más amplio en pantallas pequeñas */
+    }
+    .portfolio .galeria .proyecto video {
+        max-width: 100%;  /* Asegura que el video mantenga su flexibilidad */
+        height: auto;  /* Mantiene las proporciones */
     }
     .sobremi .fila{
         display: block;
