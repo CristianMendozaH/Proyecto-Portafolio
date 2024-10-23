@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{titulo}}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload" href="/assets/css/normalize.css" as="style">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="preload" href="/assets/css/styles.css" as="style">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <meta name="description" content="Portafolio de Cristian Mendoza, estudiante de Ingeniería en Sistemas y apasionado por la programación y la tecnología.">
+</head>
+<body>
+  <!-- MENU ENCABEZADO -->
+<div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="/">{{nombre}} <span>{{apellido}}</span></a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="/" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                <li><a href="portafolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+
+        <div class="nav-icon" id="nav-icon">
+            <i class="fas fa-bars"></i> <!-- Este es el ícono del menú -->
+        </div>
+    </header>
+</div>
+
+<!----------------------- SECCION INICIO ------------------------->
+<section id="inicio" class="portfolio">
+    <div class="contenido-seccion">
+        <br>
+        <br>
+        <div class="git">
+            <img src="/assets/images/1.png" class="gitimg" alt=""><br>
+        </div>
+
+        <div class="tituloP">
+            <h2>Aplicación YARGS</h2>
+        </div>
+        <div class="git">
+            <button class="css">NodeJs</button>
+            <button class="JavaS">JavaScript</button>
+            <a href="https://github.com/CristianMendozaH/Aplicacion-YARGS.git"><button class="language-button1">Repositorio</button></a>
+        </div>
+        <br>
+        <div class="definicion">
+            <span>El siguente proyecto se realizo como parte del curso de desarollo web, el objetivo de este es mostrar como es la evolucion de una app, este proyecto genera tablas de multiplicar donde el usuario ingresa el valor de la base y el programa lo realiza a aprtir de destructuracion y va pasando los valores para poder tomados por otras funciones y asi realizar los calculos.</span>
+        </div>
+        <hr>
+        <br>
+      
+        <div class="galeria">
+
+            <div class="proyecto">
+               <img src="/assets/images/P6.png"  alt="">
+                <div class="descripcion">
+                    <h3>App.js</h3>
+                    <p>Crecion de app a app15</p>
+                </div>
+            </div>
+        
+            <div class="proyecto">
+                <img src="img/P6V2.png"  alt="">
+                 <div class="descripcion">
+                     <h3>Genera archivos .txt</h3>
+                     <p>Al compilar esta app genera ya no en la consola ya que se realizo una modificacion para poder tener el resultado en un .txt</p>
+                 </div>
+             </div>
+
+             <div class="proyecto">
+                <img src="/assets/images/P6V3.png"  alt="">
+               <div class="descripcion">
+                     <h3>Instalacion de dependencias</h3>
+                     <p>Esta app fue una evolución ya que cada que se crea uno va adquiriendo mas complementos para poder darle mas dinamismo al codigo y mejoras en el aspecto.</p>
+                 </div>
+             </div>
+
+             <div class="proyecto">
+                <img src="/assets/images/P6V4.png"  alt="">
+               <div class="descripcion">
+                     <h3>Terminacion de todas las apps</h3>
+                     <p>Se crean las app para poder visualizar la evolución de las herramientas</p>
+                 </div>
+             </div>
+
+
+             <div class="proyecto">
+                <img src="/assets/images/P6V5.png"  alt="">
+               <div class="descripcion">
+                     <h3>Uso de archivos externos</h3>
+                     <p>Se usaron archovos externos para poder tomar los campos y proccesarlos en archos externos como lo son los multiplicar que estan alojados en helpers</p>
+                 </div>
+             </div>
+
+             <div class="proyecto">
+                <img src="/assets/images/P6V6.png"  alt="">
+               <div class="descripcion">
+                     <h3>Uso de yargas</h3>
+                     <p>En estas apps se usaron los archivos yargs alojados en un unos archivos.</p>
+                 </div>
+             </div>
+          
+        </div>
+    </div>
+</section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/CristianMendozaH"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p>&copy; 2024 Cristian Mendoza. </p>
+    </footer>
+
+<script src="/assets/js/menu.js"></script>
+</body>
+</html>
